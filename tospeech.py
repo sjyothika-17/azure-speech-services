@@ -3,12 +3,12 @@ For more samples please visit https://github.com/Azure-Samples/cognitive-service
 """
 import azure.cognitiveservices.speech as speechsdk
 
-endpoint_url = "https://project12345.cognitiveservices.azure.com/"
+endpoint_url = "https://projec2345.cognitiveservices.azure.com/"
 
 from urllib.parse import urlparse
 
 parsed = urlparse(endpoint_url)
-base_endpoint = f"{parsed.scheme}://{parsed.netloc}"
+base_endpoint = f"{parsed.scheme}://{parsed.loc}"
 
 speech_key = "7z3sQhR15CLCTB4cArV9G4dcw83HxAcZec4esdhx0KsEzX77nwO7JQQJ99CKACF24PCXJ3w3AAAAACOGAjfB"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, endpoint=base_endpoint)
